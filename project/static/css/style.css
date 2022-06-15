@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(87, 178, 243);
+    text-align: center;
+    padding-top: 100px;
+}
+
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 2px solid rgb(160,82,45);
+    color: black;
+    outline: none;
+    transition: .6s ease;
+	font-weight: bold;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(160,82,45);
+    color: white;
+    box-shadow: 0 0 5px rgb(160,82,45), 0 0 10px rgb(160,82,45), 0 0 15px rgb(160,82,45);
+    font-weight: bold;
+}
+
+.tb {
+    border-radius: 10px;
+    border: 2px solid rgb(160,82,45);
+    padding: 5px; 
+    width: 200px;
+    height: 20px;  
+  }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bond Strength Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css') }}">
+</head>
+<body>
+    <h2 style="color: rgb(160,82,45);font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">FRP Bond Strength Prediction</h2>
+    <form action="{{url_for('pred')}}"  method="post">
+        <input class="tb" type="number" step="any" id="mm" name="mm" placeholder="MM">
+        <br><br>
+        <input class="tb"  type="number" step="any" id="mm" name="mpa" placeholder="MPA">
+        <br><br>
+        <input class="tb"  type="number" step="any" id="mm" name="gpa" placeholder="GPA">
+        <br><br>
+        <input class="tb"  type="number" step="any" id="mm" name="mm1" placeholder="MM1">
+        <br><br>
+        <input class="tb"  type="number" step="any" id="mm" name="mm2" placeholder="MM2">
+        <br><br>
+        <input class="tb"  type="number" step="any" id="mm" name="mm3" placeholder="MM3">
+        <br><br>
+
+        <button type="'submit" class="btn">Predict</button>
+    </form>
+    <br>
+    {{ pred_text}}
+</body>
+</html>
